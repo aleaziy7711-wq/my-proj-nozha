@@ -1,0 +1,199 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NOON ART - Gift Store</title>
+<style>
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+background-color: #fff;
+color: #333;
+line-height: 1.6;
+}
+a {
+text-decoration: none;
+color: inherit;
+}
+button {
+cursor: pointer;
+}
+
+header {
+background: linear-gradient(90deg, #ffc0cb, #ffb6c1);
+padding: 20px 50px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+position: sticky;
+top: 0;
+z-index: 100;
+}
+header h1 {
+color: #fff;
+font-size: 2.5em;
+font-weight: bold;
+letter-spacing: 2px;
+}
+nav a {
+margin-left: 25px;
+color: #fff;
+font-weight: 600;
+transition: 0.3s;
+}
+nav a:hover {
+color: #fffafa;
+text-decoration: underline;
+}
+
+.hero {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+background: linear-gradient(180deg, #fff, #ffe4e1);
+height: 75vh;
+text-align: center;
+padding: 20px;
+}
+.hero h2 {
+font-size: 3em;
+color: #ff69b4;
+margin-bottom: 15px;
+}
+.hero p {
+font-size: 1.3em;
+color: #ff1493;
+margin-bottom: 25px;
+}
+.hero button {
+padding: 15px 40px;
+background: #ff69b4;
+color: white;
+border: none;
+border-radius: 25px;
+font-size: 1.1em;
+transition: 0.3s;
+}
+.hero button:hover {
+background: #ff1493;
+}
+
+.products {
+padding: 60px 50px;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 35px;
+background: #fff0f5;
+}
+.product {
+background: #fff;
+border-radius: 20px;
+padding: 20px;
+text-align: center;
+box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+transition: transform 0.3s, box-shadow 0.3s;
+}
+.product img {
+max-width: 100%;
+border-radius: 15px;
+margin-bottom: 15px;
+}
+.product h3 {
+color: #ff69b4;
+margin-bottom: 10px;
+}
+.product p {
+color: #555;
+margin-bottom: 15px;
+}
+.product button {
+padding: 12px 25px;
+background: #ff69b4;
+color: white;
+border: none;
+border-radius: 25px;
+transition: 0.3s;
+}
+.product button:hover {
+background: #ff1493;
+}
+.product:hover {
+transform: translateY(-7px);
+box-shadow: 0 12px 20px rgba(0,0,0,0.2);
+}
+
+footer {
+background: linear-gradient(90deg, #ffc0cb, #ffb6c1);
+color: white;
+text-align: center;
+padding: 25px 20px;
+}
+footer p {
+margin-bottom: 8px;
+font-size: 0.95em;
+}
+
+@media (max-width: 768px) {
+header {
+flex-direction: column;
+text-align: center;
+}
+nav {
+margin-top: 10px;
+}
+.hero h2 {
+font-size: 2.2em;
+}
+.hero p {
+font-size: 1.1em;
+}
+}
+</style>
+</head>
+<body>
+
+<header>
+<h1>NOON ART</h1>
+<nav>
+<a href="#products">Products</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+<h2>Beautiful Gifts for Every Occasion</h2>
+<p>Choose your perfect gift from NOON ART store</p>
+<button>Shop Now</button>
+</section>
+<section class="products" id="products">
+<div class="product">
+<img src="2.jpg" alt="Gift 1">
+<h3>Pink Gift Box</h3>
+<p>Elegant gift box with pink gradient decorations.</p>
+<button>Buy Now</button>
+</div>
+<div class="product">
+<img src="3.jpg" alt="Gift 2">
+<h3>Luxury Gift</h3>
+<p>A wonderful gift for your loved ones.</p>
+<button>Buy Now</button>
+</div>
+<div class="product">
+<img src="4.jpg" alt="Gift 3">
+<h3>Special Gift</h3>
+<p>The best gift for any special occasion.</p>
+<button>Buy Now</button>
+</div>
+</section>
+<footer id="contact">
+<p>© 2025 NOON ART - All Rights Reserved</p>
+<p>Contact us: info@noonart.com</p>
+</footer>
+</body>
+</html>
